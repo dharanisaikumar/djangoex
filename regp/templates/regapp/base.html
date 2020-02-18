@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Raleway&display=swap" rel="stylesheet">
+ <style type="text/css">
+   a:visited{
+    color:black;
+   }
+ </style>
+
+</head>
+<body>
+  <div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 65px;padding-top: 13px;padding-bottom: 13px;background: #000000">
+  <a class="navbar-brand" href="{%url 'regapp:index'%}">
+    <img src="{% static 'title.png' %}" width="189" height="42" class="d-inline-block align-top" alt="">
+  </a>
+  <span class="text-center" style="font-family: 'Pacifico';font-size: 20px"><a href="{%url 'regapp:symp'%}"> Symptoms </a>  <a href="{%url 'regapp:res'%}">Research </a>  <a href="{%url 'regapp:shop'%}"> Shop </a>  <a href="{%url 'regapp:register'%}"> Register </a></span>
+</nav>
+
+{% block body%}
+{%endblock%}
+</body>
+</html>

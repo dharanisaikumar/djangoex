@@ -1,0 +1,69 @@
+
+{%extends "regapp/base.html"%}
+{%block body%}
+{%load static%}
+<div style="background: ">
+<div class="text-center" style="font-family: 'Pacifico'">
+<span style="font-size: 30px;color:#ed9191">CoronaVirus Death Toll:{{toll}}</span><br>
+<small class="text-muted">Last updated 3 mins ago</small></div>
+<div class="card mb-3" style=" width: 80%;margin: 0 auto;padding: 20px;font-family: 'Pacifico', cursive;">
+  <div class="row no-gutters">
+    <div class="col-md-4" ">
+      <img src="{%static 'symptoms.jpg'%}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body" style="font-size: 18px">
+        <h2 class="card-title">COVID-19</h2>
+        <p class="card-text">Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.</p>
+        <p>Coronaviruses are zoonotic, meaning they are transmitted between animals and people.  Detailed investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary camels to humans. Several known coronaviruses are circulating in animals that have not yet infected humans.</p>
+
+   
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style=" width: 80%;margin: 0 auto;padding: 20px;font-family: 'Pacifico', cursive;">
+  <img src="{%static 'emergency.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">CoronaVirus affected Countries</h3>
+    <p class="card-text"><ul>
+    	<li>
+    		China
+    	</li>
+    	<li>India</li>
+    	<li>Japan</li>
+    	<li>Thailand</li>
+    </ul></p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card mb-3" style=" width: 80%;margin: 0 auto;padding: 20px;font-family: 'Pacifico', cursive;">
+	<h3>Safety Tips</h3>
+	<ul style="font-size: 20px">
+		<li>Clean hands with soap and water or alcohol-based hand rub</li>
+		<li>Cover nose and mouth when coughing and sneezing with tissue or flexed elbow</li>
+		<li>Avoid close contact with anyone with cold or flu-like symptoms</li>
+		<li>Avoid unprotected contact with live animals</li>
+		<li>Thoroughly cook meat and eggs</li>
+	</ul>
+</div>
+</div>
+<footer style="margin-top:5px;
+  margin-left:0;
+  margin-right:0;
+  background:white;
+  text-align:center;
+  padding-bottom:20px;
+  padding-top:20px;
+   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: black;
+  text-align: center;
+  max-width:100%;font-family: 'Pacifico';background-color: #f8f9fa!important">
+<strong>&copy;MDSK 2020</strong>
+</footer>
+
+{%endblock%}

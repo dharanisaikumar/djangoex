@@ -1,0 +1,41 @@
+{% extends "regapp/base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+  <div class="container">
+    <div class="card mb-3" style=" width: 80%;margin: 0 auto;padding: 20px;">
+      {% if registered %}
+        <h1>Thank you {{user}} for registering!</h1>
+      {% else %}
+        <h1>Register Here</h1>
+        <h3>Just fill out the form.</h3>
+
+        <form enctype="multipart/form-data" method="POST" class="form-group">
+          {% csrf_token %}
+          {{ user_form.as_p }}
+          
+          <input type="submit" name="" value="Register">
+        </form>
+
+      {% endif %}
+
+    </div>
+
+  </div>
+<footer style="margin-top:5px;  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: black;
+  text-align: center;
+  margin-left:0;
+  margin-right:0;
+  background:white;
+  text-align:center;
+  padding-bottom:20px;
+  padding-top:20px;
+  max-width:100%;font-family: 'Pacifico';background-color: #f8f9fa!important">
+<strong>&copy;MDSK 2020</strong>
+</footer>
+{% endblock %}
